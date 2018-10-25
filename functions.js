@@ -1,3 +1,17 @@
+function getBrowserDetails(){
+var txt = "";
+var space = "\n";
+console.log("Your Current Browser Details are: ");
+txt += "Browser CodeName: " + navigator.appCodeName + ".";
+txt += space+"Browser Name: " + navigator.appName + ".";
+txt += space+"Browser Version: " + navigator.appVersion + ".";
+txt += space+"Cookies Enabled: " + navigator.cookieEnabled + ".";
+txt += space+"Browser Language: " + navigator.language + ".";
+txt += space+"Browser Online: " + navigator.onLine + ".";
+txt += space+"Platform: " + navigator.platform + ".";
+txt += space+"User-agent header: " + navigator.userAgent + ".";
+console.log(txt);
+}
 function TimeNDate(){
   var day = new Date();
   return day;
@@ -129,3 +143,4 @@ function makeFooter(company="hello"){
  var footerText = "&#169; Copyright "+((TimeNDate().getFullYear()*1).toString())+" \""+company+"\"";
  document.getElementById("footerText").innerHTML = (footerText);
 }
+
