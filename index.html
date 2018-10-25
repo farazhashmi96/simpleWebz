@@ -12,7 +12,7 @@
 <link rel="stylesheet" type="text/css" href="ResponsiveStyle.css"/>
 -->
 </head>
-<body>
+<body onLoad="toTheDateIs(); makeFooter('Private Solutions');">
 <main>
 <header></header>
 <nav>
@@ -38,11 +38,31 @@
 </article>
 <hr/>
 <h6 id="tempe">Lets Check Temperature: </h6>
-<input type="button" onClick="Fahrenheit_to_Celsius(32);" value="Click For Check Temperature"/>
-<input type="button" onClick="Celsius_to_Fahrenheit(0);" value="Click For Check Temperature"/>
+<table>
+<tr>
+<td><input type="button" onClick="Fahrenheit_to_Celsius(32);" value="Click For Check Temperature"/></td>
+<td><input type="button" onClick="Celsius_to_Fahrenheit(0);" value="Click For Check Temperature"/></td>
+</tr>
+<tr>
+<td><input type="button" onClick="appliedDriving(15);" value="Check Driving"/></td>
+<td><input type="button" onClick="helloWorld();" value="Greetings"/></td>
+</tr>
+<tr>
+<td><input type="button" onClick="ifLoopCheck();" value="Button"/></td>
+<td><input type="button" onClick="specifyUserDetails();" value="Button"/></td>
+</tr>
+<tr>
+<td><input type="button" onClick="whileLoopCheck();" value="Button"/></td>
+<td><input type="button" onClick="doWhileLoopCheck();" value="Button"/></td>
+</tr>
+<tr>
+<td><input type="button" onClick="" value="Button"/></td>
+<td><input type="button" onClick="" value="Button"/></td>
+</tr>
+<button class="btn btn-primary" onClick="makeFooter();">Date</button>
 </section>
-<footer>
-<p>&#169; Copyright</p>
+<footer onLoad="">
+<p id="footerText"><script>document.write(new Date().getFullYear()); </script></p>
 </footer>
 </main>
 </body>
