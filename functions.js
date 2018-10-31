@@ -143,4 +143,13 @@ function makeFooter(company="hello"){
  var footerText = "&#169; Copyright "+((TimeNDate().getFullYear()*1).toString())+" \""+company+"\"";
  document.getElementById("footerText").innerHTML = (footerText);
 }
-
+function car(name = 'Suzuki', modelYear = 1989, engineSize = 786){
+  var carIs = {
+    Name: name,
+    model: modelYear,
+    engine: engineSize,
+    disp : function(){
+      return ("The car name is " + this.Name + ", model year " + this.model + " and engine size " + this.engine+".");    }
+  };
+ console.log(carIs.disp());
+}
